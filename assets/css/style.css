@@ -14,7 +14,7 @@
   --border:    #e1e1e1;
   --link:      #52adc8;
   --link-hover:#1d8ea8;
-  --masthead-bg: #fff;
+  --masthead-bg: #2b2b2b;
   --sidebar-w: 260px;
   --max-w:     1200px;
   --font-sans: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
@@ -37,7 +37,7 @@ img { max-width: 100%; display: block; }
 
 /* ---------- Masthead / Navbar ---------- */
 .masthead {
-  border-bottom: 1px solid var(--border);
+  border-bottom: none;
   background: var(--masthead-bg);
   position: sticky; top: 0; z-index: 100;
 }
@@ -49,17 +49,26 @@ img { max-width: 100%; display: block; }
   justify-content: space-between;
   padding: .6rem 1.5rem;
 }
+.masthead__logo {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: .08em;
+  text-decoration: none;
+}
+.masthead__logo:hover { color: var(--link); text-decoration: none; }
 .masthead__title {
   font-size: 1.1rem;
   font-weight: 700;
-  color: var(--text);
+  color: #fff;
+  display: none;
 }
 .masthead__title:hover { color: var(--link); text-decoration: none; }
 .masthead__menu { list-style: none; display: flex; gap: 1.6rem; }
 .masthead__menu a {
   font-size: .88rem;
   font-weight: 600;
-  color: var(--text);
+  color: #ccc;
   letter-spacing: .02em;
   text-transform: uppercase;
   padding: .25rem 0;
@@ -68,14 +77,14 @@ img { max-width: 100%; display: block; }
 }
 .masthead__menu a:hover,
 .masthead__menu a.active {
-  color: var(--link);
+  color: #fff;
   border-bottom-color: var(--link);
   text-decoration: none;
 }
 
 /* hamburger (mobile) */
 .menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: .25rem; }
-.menu-toggle svg { width: 24px; height: 24px; fill: var(--text); }
+.menu-toggle svg { width: 24px; height: 24px; fill: #fff; }
 
 /* ---------- Page wrapper ---------- */
 .page-wrapper {
