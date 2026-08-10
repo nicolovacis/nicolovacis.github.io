@@ -40,7 +40,7 @@
     <ul class="sidebar__links">
       <li>
         <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>
-        Chicago, IL / Milan, Italy
+        Princeton, NJ / Chicago, IL / Milan, Italy
       </li>
       <li>
         <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
@@ -61,14 +61,14 @@
   <main class="main-content">
     <h1>Curriculum Vitae</h1>
 
-    
+
 
     <!-- ==================== EXPERIENCE ==================== -->
     <h2>Experience</h2>
 
     <div class="cv-entry">
       <div class="cv-entry__header">
-        <span class="cv-entry__title">Princeton Vision &amp; Learning Lab</span>
+        <span class="cv-entry__title"><a href="https://pvl.cs.princeton.edu/" target="_blank">Princeton Vision &amp; Learning Lab</a></span>
         <span class="cv-entry__location">Princeton, NJ</span>
       </div>
       <div class="cv-entry__meta">
@@ -76,13 +76,14 @@
         <span class="cv-entry__date">Jun 2026 – Sep 2026</span>
       </div>
       <ul>
-        <li>Researching virtual environment reconstruction under Prof. Jia Deng (co-creator of <strong>ImageNet</strong>, 93k+ citations), targeting CVPR 2026.</li>
+        <li>Optimizing camera sensor design in generated 3D environments through physically-based simulation for depth and segmentation robustness.</li>
+        <li>Conducted under the supervision of Prof. Jia Deng (co-creator of <strong>ImageNet</strong>), with work targeting CVPR 2027.</li>
       </ul>
     </div>
 
     <div class="cv-entry">
       <div class="cv-entry__header">
-        <span class="cv-entry__title">EssilorLuxottica Smart Eyewear Lab</span>
+        <span class="cv-entry__title"><a href="https://www.essilorluxottica.com/en/careers/smart-eyewear-lab/" target="_blank">EssilorLuxottica Smart Eyewear Lab</a></span>
         <span class="cv-entry__location">Milan, Italy</span>
       </div>
       <div class="cv-entry__meta">
@@ -90,14 +91,14 @@
         <span class="cv-entry__date">Jun 2025 – Sep 2025</span>
       </div>
       <ul>
-        <li>Deployed real-time pose estimation on smart glasses with <strong>Ray-Ban Meta</strong>, achieving 57% accuracy gain via mixed-precision quantization.</li>
-        <li>Reduced embedded model size by 2× on YOLOv8 Pose by developing an automatic layer-wise search framework via sensitivity analysis.</li>
+        <li>Built a mixed-precision framework for <strong>Ray-Ban Meta</strong> glasses, compressing YOLOv8-Pose by 56% at 98% FP32 accuracy.</li>
+        <li>Deployed ONNX models onto STM32N6570-DK and GAP9, measuring memory and latency through ST Edge AI Core and NNTool.</li>
       </ul>
     </div>
 
     <div class="cv-entry">
       <div class="cv-entry__header">
-        <span class="cv-entry__title">BeMyEye</span>
+        <span class="cv-entry__title"><a href="https://mira.cv/" target="_blank">Mira.cv</a></span>
         <span class="cv-entry__location">Milan, Italy</span>
       </div>
       <div class="cv-entry__meta">
@@ -105,8 +106,8 @@
         <span class="cv-entry__date">Jul 2024 – Oct 2024</span>
       </div>
       <ul>
-        <li>Built a deep learning hazard detection system for camera-based self-checkout, deployed at scale for <strong>Schwarz Group (Europe's #1 retailer)</strong>.</li>
-        <li>Boosted detection model interpretability by 9% confidence gain by designing a diffusion model to reconstruct feature maps of detected objects.</li>
+        <li>Deployed a zero-shot hazard detection system for camera-based self-checkout, reaching 98% accuracy with no retraining on new SKUs.</li>
+        <li>Increased detection model interpretability 9% by designing a diffusion model to reconstruct feature maps of detected objects.</li>
       </ul>
     </div>
 
@@ -138,7 +139,7 @@
         <span class="cv-entry__date">Dec 2026</span>
       </div>
       <ul>
-        <li>GPA: 3.85 – Relevant Coursework: Deep Learning, Machine Learning, Computer Vision, Multiagent Systems</li>
+        <li>GPA: 3.85 – Relevant Coursework: Deep Learning, Machine Learning, GPU &amp; FPGA Accelerators</li>
       </ul>
     </div>
 
@@ -170,38 +171,39 @@
       </ul>
     </div>
 
+    <!-- ==================== PUBLICATIONS ==================== -->
+    <h2>Publications</h2>
+
+    <div class="cv-entry">
+      <div class="cv-entry__header">
+        <span class="cv-entry__title">“Every Head Counts: VLM Attention Recovery Under Domain Shift”</span>
+        <span class="cv-entry__location">Under review at <strong>AAAI 2027</strong></span>
+      </div>
+      <div class="cv-entry__meta">
+        <span class="cv-entry__subtitle">Nicolò Vacis, Zhu Wang, Yuyao Yang, Giovanni Vaccarino, Sathya N. Ravi</span>
+        <span class="cv-entry__date">2026</span>
+      </div>
+      <ul>
+        <li>Calibrated frozen VLM attention into a training-free prior that corrects segmenters under domain shift, recovering 35.0% of missed classes.</li>
+      </ul>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry__header">
+        <span class="cv-entry__title">“FLAME: Mixed-Precision Quantization on Embedded Devices”</span>
+        <span class="cv-entry__location">Under review at <strong>ACM TECS</strong></span>
+      </div>
+      <div class="cv-entry__meta">
+        <span class="cv-entry__subtitle">Greta Corti*, Matteo Vitali*, Nicolò Vacis, Vittorio Palladino, Luca Merigo, Sara Pidò, Matteo Matteucci</span>
+        <span class="cv-entry__date">2026</span>
+      </div>
+      <ul>
+        <li>Developed a PyTorch-to-ONNX-to-device framework, holding MobileNetV2 and DeepLabV3 within 0.3% of FP32 at 63.6–66.0% smaller.</li>
+      </ul>
+    </div>
+
     <!-- ==================== RESEARCH & PROJECTS ==================== -->
     <h2>Research &amp; Projects</h2>
-
-    <div class="cv-entry">
-      <div class="cv-entry__header">
-        <span class="cv-entry__title">Night Vision AI: Multi-Modal Segmentation for Autonomous Driving</span>
-        <span class="cv-entry__location">Chicago, IL</span>
-      </div>
-      <div class="cv-entry__meta">
-        <span class="cv-entry__subtitle">University of Illinois Chicago</span>
-        <span class="cv-entry__date">Jan 2026 – Present</span>
-      </div>
-      <ul>
-        <li>Advancing night-time autonomous driving perception by 9% mIoU on NightCity with Vision-Language Models, targeting <strong>AAAI 2026</strong>.</li>
-        <li>Improving model robustness under adverse visual conditions by integrating additional reasoning capabilities from Vision-Language Models.</li>
-      </ul>
-    </div>
-
-    <div class="cv-entry">
-      <div class="cv-entry__header">
-        <span class="cv-entry__title">Real-Time Action Understanding for Autonomous Vision Systems</span>
-        <span class="cv-entry__location">Chicago, IL</span>
-      </div>
-      <div class="cv-entry__meta">
-        <span class="cv-entry__subtitle">University of Illinois Chicago – Stanford</span>
-        <span class="cv-entry__date">Sep 2025 – Mar 2026</span>
-      </div>
-      <ul>
-        <li>Developed a Multi-Stage TCN framework for fine-grained temporal action segmentation in video streams for intelligent perception systems.</li>
-        <li>Designed a hybrid vision pipeline combining CNNs, pose estimation, and transformer-based architectures to improve frame-level understanding.</li>
-      </ul>
-    </div>
 
     <div class="cv-entry">
       <div class="cv-entry__header">
@@ -224,12 +226,12 @@
         <span class="cv-entry__location">Milan, Italy</span>
       </div>
       <div class="cv-entry__meta">
-        <span class="cv-entry__subtitle">Artificial Intelligence Driving Autonomous – Politecnico di Milano</span>
+        <span class="cv-entry__subtitle"><a href="https://aida.polimi.it/" target="_blank">Artificial Intelligence Driving Autonomous – Politecnico di Milano</a></span>
         <span class="cv-entry__date">Jan 2025 – Sep 2025</span>
       </div>
       <ul>
-        <li>Built a Vision Transformer pipeline for camera-based 3D detection to compensate LiDAR long-range limitations in autonomous driving.</li>
-        <li>Validated on AIDA dataset, delivering measurable 3D object detection accuracy gains for Italy's top autonomous driving team sponsored by <strong>FIAT</strong>, <strong>Maserati</strong>, and <strong>Cisco</strong>.</li>
+        <li>Built a Vision Transformer pipeline for multi-view 3D perception using depth estimation and camera geometry beyond LiDAR range.</li>
+        <li>Improved 3D detection accuracy on AIDA dataset through camera–LiDAR sensor fusion for <strong>FIAT</strong>, <strong>Maserati</strong> and <strong>Cisco</strong> sponsored research.</li>
       </ul>
     </div>
 
@@ -238,19 +240,16 @@
 
     <dl class="cv-skills">
       <dt>Languages</dt>
-      <dd>C, C++, Scala, Python, JavaScript, TypeScript, Java, SQL, C#</dd>
+      <dd>Python, C++, C, Java, SQL, Scala, TypeScript, JavaScript</dd>
 
-      <dt>Frameworks &amp; Toolchains (ML)</dt>
-      <dd>TensorFlow, PyTorch, scikit-learn, OpenCV, LangChain</dd>
+      <dt>ML &amp; GPU Toolchains</dt>
+      <dd>PyTorch, TensorFlow, CUDA, ONNX, OpenCV, scikit-learn, LangChain</dd>
 
-      <dt>Frameworks &amp; Toolchains (Software)</dt>
-      <dd>React, NodeJS, ASP.NET Core, Hadoop, Spark</dd>
+      <dt>Distributed &amp; Cloud</dt>
+      <dd>AWS, Docker, Hadoop, Spark, Linux</dd>
 
-      <dt>Cloud &amp; Distributed Systems</dt>
-      <dd>AWS, Docker, MongoDB</dd>
-
-      <dt>Other Tools</dt>
-      <dd>MySQL, Git, Linux</dd>
+      <dt>Databases, Web &amp; Tools</dt>
+      <dd>MySQL, MongoDB, React, NodeJS, ASP.NET Core, Git</dd>
     </dl>
 
   </main>
